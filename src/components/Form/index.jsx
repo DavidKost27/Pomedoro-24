@@ -37,20 +37,22 @@ export default function Form({
   };
   return (
     <form className="form-container">
-      <input
-        maxLength={24}
-        value={inputText}
-        onChange={handlerTitleInput}
-        type="text"
-        className="form-container__title-input input-field"
-      />
-      <input
-        maxLength={35}
-        value={inputDescription}
-        onChange={handlerDescriptionInput}
-        type="text"
-        className="form-container__description-input input-field"
-      />
+      <div className="input-fields-flex-wrap">
+        <input
+          maxLength={24}
+          value={inputText}
+          onChange={handlerTitleInput}
+          type="text"
+          className="form-container__title-input input-field"
+        />
+        <input
+          maxLength={35}
+          value={inputDescription}
+          onChange={handlerDescriptionInput}
+          type="text"
+          className="form-container__description-input input-field"
+        />
+      </div>
       <button
         onClick={handlerSubmitTodo}
         className="form-container__submit-button"

@@ -4,8 +4,14 @@
   border-radius: 10px;
   position: relative;
   height: auto;
+  .input-fields-flex-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   .input-field {
-    width: 229.5px;
+    width: 90%;
     height: 3.4px;
     outline: none;
     color: #ffffff;
@@ -37,10 +43,26 @@
     border-radius: 0 10px 0 0;
     width: 80px;
     height: 60px;
-    background-color: transparent;
+    background-color: rgb(34, 34, 34);
     color: #ffffff;
     border: none;
     border: 2px solid #ff8c2e85;
-    z-index: 2;
+    z-index: 5;
+  }
+}
+
+// Ipad
+@media only screen and (min-width: 767px) {
+  .form-container {
+    .input-fields-flex-wrap {
+    }
+    .input-field {
+    }
+    &__title-input {
+    }
+    &__description-input {
+    }
+    &__submit-button {
+    }
   }
 }

@@ -5,20 +5,22 @@
   color: #ffffff;
   box-sizing: border-box;
   padding-bottom: 10px;
+  .font {
+    font-family: "Oswald", sans-serif;
+  }
   .todo-taks-container {
     padding-left: 5px;
     &__title {
       padding: 0;
       font-size: 25px;
-      width: 270px;
+      // width: 270px;
       height: 30px;
-      text-transform: capitalize;
-      letter-spacing: 0.7px;
-      font-family: "Oswald", sans-serif;
       line-height: 28px;
+      letter-spacing: 0.7px;
+      text-transform: capitalize;
+      margin-bottom: 2px;
     }
     &__description {
-      font-family: "Oswald", sans-serif;
       width: 250px;
       height: 30px;
       line-height: 31px;
@@ -48,32 +50,66 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &__complete-btn {
+    .buttons-task {
+      font-size: 15px;
+      width: 50px;
+      height: 30px;
+      text-align: center;
+      color: white;
+      background-color: transparent;
       outline: none;
+    }
+    &__complete-btn {
       border-image-source: linear-gradient(-25deg, #553812, #af5308);
       border-image-slice: 1;
       border-width: 2px;
-      background-color: transparent;
-      color: white;
-      width: 50px;
-      height: 30px;
-      text-align: center;
-      font-family: "Oswald", sans-serif;
-      font-size: 15px;
       margin-bottom: 2px;
     }
     &__trash-btn {
-      outline: none;
       border-image-source: linear-gradient(165deg, #553812, #af5308);
       border-image-slice: 1;
       border-width: 2px;
-      background-color: transparent;
-      color: white;
-      width: 50px;
-      height: 30px;
-      text-align: center;
-      font-family: "Oswald", sans-serif;
+    }
+  }
+}
+
+// Ipad
+@media only screen and (min-width: 767px) {
+  .havetodo-container {
+    .todo-taks-container {
+      .buttons-task {
+        font-size: 55px;
+      }
+      &__title {
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        letter-spacing: 0.7px;
+        background-color: green;
+      }
+      &__description {
+        width: 250px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 20px;
+        background-color: red;
+      }
+      .completed {
+      }
+      .completed::after {
+      }
+    }
+
+    .buttons-container {
+      .buttons-task {
+        font-size: 25px;
+        width: 70px;
+        height: 40px;
+      }
+      &__complete-btn {
+      }
+      &__trash-btn {
+      }
     }
   }
 }

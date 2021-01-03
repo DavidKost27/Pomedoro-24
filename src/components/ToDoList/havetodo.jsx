@@ -30,14 +30,14 @@ export default function Havetodo({
     <div className="havetodo-container">
       <div className="todo-taks-container">
         <div
-          className={`todo-taks-container__title ${
+          className={`todo-taks-container__title font ${
             todo.completed ? "completed" : ""
           }`}
         >
           {title}
         </div>
         <li
-          className={`todo-taks-container__description ${
+          className={`todo-taks-container__description font ${
             todo.completed ? "completed" : ""
           }`}
         >
@@ -48,13 +48,13 @@ export default function Havetodo({
       <div className="buttons-container">
         <button
           onClick={handlerComplete}
-          className="buttons-container__complete-btn"
+          className="buttons-container__complete-btn buttons-task font"
         >
           Done
         </button>
         <button
           onClick={handlerDelete}
-          className="buttons-container__trash-btn"
+          className="buttons-container__trash-btn buttons-task font"
         >
           Trash
         </button>
