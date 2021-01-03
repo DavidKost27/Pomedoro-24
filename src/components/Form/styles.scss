@@ -1,0 +1,46 @@
+.form-container {
+  background-color: rgba(128, 128, 128, 0.281);
+  width: auto;
+  height: 265px;
+  border-radius: 10px;
+  position: relative;
+  .input-field {
+    width: 229.5px;
+    height: 3px;
+    outline: none;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.075);
+    font-family: "Oswald", sans-serif;
+    padding: 11.8px;
+  }
+  &__title-input {
+    font-size: 20px;
+    border-radius: 10px 0 0 0;
+    border: none;
+    border-top: 2px solid #ff8c2e85;
+    border-bottom: 1px solid #ff8c2e85;
+    border-left: 2px solid #ff8c2e85;
+  }
+  &__description-input {
+    font-size: 15px;
+    border: none;
+    border-top: 2px solid #ff8c2e85;
+    border-bottom: 2px solid #ff8c2e85;
+    border-left: 2px solid #ff8c2e85;
+  }
+  &__submit-button {
+    cursor: pointer;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 10px 0 0;
+    width: 80px;
+    height: 60px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    border: 2px solid #ff8c2e85;
+    z-index: 2;
+  }
+}

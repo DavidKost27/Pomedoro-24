@@ -1,0 +1,16 @@
+.top-bar__container {
+  width: 100vw;
+  height: 60px;
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 15px 2px #ff8b2e;
+  box-shadow: 0px 0px 15px 2px #ff8b2e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #ff8b2e;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}

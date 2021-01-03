@@ -1,0 +1,54 @@
+.timer-container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__diplay-timer {
+    font-size: 75px;
+    color: #dd7b2a;
+  }
+  .input-container {
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+
+    .input-buttons {
+      position: absolute;
+      width: 20%;
+      height: 100%;
+      font-weight: bold;
+      font-size: 30px;
+      border: none;
+      border-radius: 20px;
+      background-color: transparent;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    &__increase {
+      right: 0;
+    }
+    &__timer-input {
+      height: 60px;
+      text-align: center;
+      font-size: 40px;
+      max-width: 200px;
+      box-sizing: border-box;
+      color: #ffffff;
+      background-color: transparent;
+      border-color: #ff8c2e85;
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+    &__decrease {
+      left: 0;
+    }
+  }
+}

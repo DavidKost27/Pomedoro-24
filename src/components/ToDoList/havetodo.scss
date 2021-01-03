@@ -1,0 +1,56 @@
+.havetodo-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  box-sizing: border-box;
+  .todo-taks-container {
+    padding-left: 5px;
+    &__title {
+      padding: 0;
+      font-size: 25px;
+      width: 270px;
+      height: 30px;
+      text-transform: capitalize;
+      letter-spacing: 0.7px;
+      font-family: "Oswald", sans-serif;
+      line-height: 28px;
+    }
+    &__description {
+      font-family: "Oswald", sans-serif;
+      width: 270px;
+      height: 30px;
+      line-height: 31px;
+    }
+    .completed {
+      text-decoration: line-through;
+      text-decoration-thickness: 25px;
+      text-decoration-color: rgba(0, 0, 0, 0.781);
+      color: rgba(0, 0, 0, 0.253);
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__complete-btn {
+      outline: none;
+      border: none;
+      width: 50px;
+      height: 30px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-size: 15px;
+    }
+    &__trash-btn {
+      outline: none;
+      border: none;
+      width: 50px;
+      height: 30px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+    }
+  }
+}
