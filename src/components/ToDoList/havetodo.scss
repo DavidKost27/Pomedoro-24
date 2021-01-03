@@ -4,6 +4,7 @@
   flex-direction: row;
   color: #ffffff;
   box-sizing: border-box;
+  padding-bottom: 10px;
   .todo-taks-container {
     padding-left: 5px;
     &__title {
@@ -18,15 +19,28 @@
     }
     &__description {
       font-family: "Oswald", sans-serif;
-      width: 270px;
+      width: 250px;
       height: 30px;
       line-height: 31px;
+      margin-left: 20px;
     }
     .completed {
       text-decoration: line-through;
-      text-decoration-thickness: 25px;
-      text-decoration-color: rgba(0, 0, 0, 0.781);
-      color: rgba(0, 0, 0, 0.253);
+      text-decoration-thickness: 26px;
+      text-decoration-color: rgb(0, 0, 0);
+
+      color: rgba(255, 255, 255, 0.781);
+      position: relative;
+    }
+    .completed::after {
+      content: "REDACTED";
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 10px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 35px;
     }
   }
 
@@ -37,16 +51,25 @@
 
     &__complete-btn {
       outline: none;
-      border: none;
+      border-image-source: linear-gradient(-25deg, #553812, #af5308);
+      border-image-slice: 1;
+      border-width: 2px;
+      background-color: transparent;
+      color: white;
       width: 50px;
       height: 30px;
       text-align: center;
       font-family: "Oswald", sans-serif;
       font-size: 15px;
+      margin-bottom: 2px;
     }
     &__trash-btn {
       outline: none;
-      border: none;
+      border-image-source: linear-gradient(165deg, #553812, #af5308);
+      border-image-slice: 1;
+      border-width: 2px;
+      background-color: transparent;
+      color: white;
       width: 50px;
       height: 30px;
       text-align: center;

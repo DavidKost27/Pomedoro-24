@@ -36,13 +36,13 @@ export default function Havetodo({
         >
           {title}
         </div>
-        <div
+        <li
           className={`todo-taks-container__description ${
             todo.completed ? "completed" : ""
           }`}
         >
           {description}
-        </div>
+        </li>
       </div>
 
       <div className="buttons-container">

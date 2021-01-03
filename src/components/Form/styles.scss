@@ -1,12 +1,12 @@
 .form-container {
   background-color: rgba(128, 128, 128, 0.281);
   width: auto;
-  height: 265px;
   border-radius: 10px;
   position: relative;
+  height: auto;
   .input-field {
     width: 229.5px;
-    height: 3px;
+    height: 3.4px;
     outline: none;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.075);
@@ -24,7 +24,7 @@
   &__description-input {
     font-size: 15px;
     border: none;
-    border-top: 2px solid #ff8c2e85;
+    border-top: 1px solid #ff8c2e85;
     border-bottom: 2px solid #ff8c2e85;
     border-left: 2px solid #ff8c2e85;
   }

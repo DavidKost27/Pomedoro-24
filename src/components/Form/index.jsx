@@ -38,14 +38,14 @@ export default function Form({
   return (
     <form className="form-container">
       <input
-        maxLength={30}
+        maxLength={24}
         value={inputText}
         onChange={handlerTitleInput}
         type="text"
         className="form-container__title-input input-field"
       />
       <input
-        maxLength={45}
+        maxLength={35}
         value={inputDescription}
         onChange={handlerDescriptionInput}
         type="text"
@@ -55,7 +55,7 @@ export default function Form({
         onClick={handlerSubmitTodo}
         className="form-container__submit-button"
         type="submit"
-        disabled={inputText === "" && inputDescription === "" ? true : ""}
+        disabled={inputText === "" || inputDescription === "" ? true : ""}
       >
         ADD TASK
       </button>
