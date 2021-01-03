@@ -57,12 +57,47 @@
     .input-fields-flex-wrap {
     }
     .input-field {
+      height: 19.9px;
     }
     &__title-input {
+      font-size: 40px;
     }
     &__description-input {
+      font-size: 25px;
     }
     &__submit-button {
+      font-size: 25px;
+      width: 130px;
+      height: 93px;
     }
   }
+}
+
+// Web LapTop
+@media only screen and (min-width: 1219px) {
+  .form-container {
+    .input-fields-flex-wrap {
+    }
+    .input-field {
+    }
+    &__title-input {
+      font-size: 40px;
+    }
+    &__description-input {
+      font-size: 25px;
+    }
+    &__submit-button {
+      font-size: 25px;
+      width: 130px;
+      height: 93px;
+    }
+  }
+}
+
+// Web LapTop
+@media only screen and (min-width: 1439px) {
+}
+
+// Web Desktop
+@media only screen and (min-width: 1919px) {
 }

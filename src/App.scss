@@ -13,7 +13,7 @@
     width: 100vw;
     height: auto;
     background-color: black;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     &__headline {
       text-align: center;
       color: white;
@@ -28,7 +28,55 @@
     .todo-list-section-container {
       width: 100vw;
       padding: 0 100px;
+      padding-bottom: 30px;
       &__headline {
+        font-size: 45px;
+      }
+    }
+  }
+}
+
+// Web LapTop
+@media only screen and (min-width: 1219px) {
+  .App {
+    .todo-list-section-container {
+      width: 100vw;
+      padding: 0 250px;
+      padding-bottom: 30px;
+      &__headline {
+        font-size: 45px;
+      }
+    }
+  }
+}
+
+// Web LapTop
+@media only screen and (min-width: 1439px) {
+  .App {
+    box-sizing: border-box;
+    .todo-list-section-container {
+      box-sizing: border-box;
+      width: 100vw;
+      padding: 0 350px;
+      padding-bottom: 30px;
+      &__headline {
+        font-size: 45px;
+      }
+    }
+  }
+}
+
+// Web Desktop
+@media only screen and (min-width: 1920px) {
+  .App {
+    box-sizing: border-box;
+    .todo-list-section-container {
+      box-sizing: border-box;
+      width: 100vw;
+      padding: 0 550px;
+      padding-bottom: 50px;
+      &__headline {
+        font-size: 45px;
       }
     }
   }

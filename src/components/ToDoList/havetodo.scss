@@ -8,12 +8,12 @@
   .font {
     font-family: "Oswald", sans-serif;
   }
+
   .todo-taks-container {
     padding-left: 5px;
     &__title {
-      padding: 0;
+      padding-bottom: 2px;
       font-size: 25px;
-      // width: 270px;
       height: 30px;
       line-height: 28px;
       letter-spacing: 0.7px;
@@ -77,22 +77,61 @@
 @media only screen and (min-width: 767px) {
   .havetodo-container {
     .todo-taks-container {
-      .buttons-task {
-        font-size: 55px;
+      width: 450px;
+      padding-left: 15px;
+      .titles {
       }
       &__title {
+        font-size: 35px;
         width: auto;
-        height: 40px;
-        line-height: 40px;
+        height: 48px;
+        line-height: 39px;
         letter-spacing: 0.7px;
-        background-color: green;
       }
       &__description {
-        width: 250px;
-        height: 40px;
-        line-height: 40px;
+        font-size: 30px;
+        width: 430px;
+        height: 48px;
+        line-height: 45px;
         margin-left: 20px;
-        background-color: red;
+      }
+      .completed {
+        text-decoration-thickness: 37px;
+      }
+      .completed::after {
+        margin-left: 10px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        line-height: 50px;
+      }
+    }
+
+    .buttons-container {
+      .buttons-task {
+        font-size: 30px;
+        width: 85px;
+        height: 50px;
+        border-width: 3px;
+      }
+      &__complete-btn {
+      }
+      &__trash-btn {
+      }
+    }
+  }
+}
+
+// Web LapTop
+@media only screen and (min-width: 1219px) {
+  .havetodo-container {
+    .todo-taks-container {
+      width: 500px;
+      padding-left: 100px;
+      .titles {
+      }
+      &__title {
+      }
+      &__description {
       }
       .completed {
       }
@@ -102,9 +141,6 @@
 
     .buttons-container {
       .buttons-task {
-        font-size: 25px;
-        width: 70px;
-        height: 40px;
       }
       &__complete-btn {
       }
@@ -112,4 +148,37 @@
       }
     }
   }
+}
+
+// Web LapTop
+@media only screen and (min-width: 1439px) {
+  .havetodo-container {
+    .todo-taks-container {
+      width: 500px;
+      padding-left: 100px;
+      .titles {
+      }
+      &__title {
+      }
+      &__description {
+      }
+      .completed {
+      }
+      .completed::after {
+      }
+    }
+
+    .buttons-container {
+      .buttons-task {
+      }
+      &__complete-btn {
+      }
+      &__trash-btn {
+      }
+    }
+  }
+}
+
+// Web Desktop
+@media only screen and (min-width: 1919px) {
 }
